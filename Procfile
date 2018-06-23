@@ -1,2 +1,2 @@
-worker: python telegram.py
-web: python binance_bot.py
+telegram: python telegram.py
+binance: python binance_bot.py
