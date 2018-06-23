@@ -37,8 +37,8 @@ if __name__ == '__main__':
                     for chat_id in chats_id:
                         bot.send_message(chat_id, min_price)
                     # write the lowest price to db
-                    check_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-                    database.write_lowest_price(check_time, min_price)
+                    # check_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+                    # database.write_lowest_price(check_time, min_price)
             database.clear_prices()
 
     except KeyboardInterrupt:

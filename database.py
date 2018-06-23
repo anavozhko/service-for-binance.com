@@ -11,9 +11,6 @@ class Database(object):
             self.cursor = self.conn.cursor()
         except (Exception, psycopg2.DatabaseError) as error:
             print error
-        finally:
-            if self.conn is not None:
-                self.conn.close()
 
     def close(self):
         if self.conn:
